@@ -1,0 +1,15 @@
+name: ParticleGenerator
+version: '${project.version}'
+main: net.hogbrains.particlegenerator.ParticleGeneratorPlugin
+api-version: 1.19
+authors: [ Hemazoid ]
+commands:
+  particlegen:
+    description: Create a particle generator at your current location, or edit existing generators.
+    usage: /particlegen <particle> <count> <interval>
+    permission: particlegen.use
+    permission-message: You do not have permission to use this command.
+    aliases: ["pg"]
+permissions:
+  particlegen.use:
+    default: op

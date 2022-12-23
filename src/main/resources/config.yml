@@ -1,0 +1,36 @@
+# Configuration file for the Particle Generator plugin
+
+# List of particle generators
+generators:
+  example: world;0;64;0;FLAME;5;20;0.05;1.0;0.5;0
+messages:
+  prefix: "&c&lParticleGen &7"
+  createUsage: "Usage: /particlegen create <name> <particle> <count> <interval> <speed> <offsetX> <offsetY> <offsetZ>"
+  generatorExists: "&cA generator with that name already exists!"
+  invalidParticle: "&cInvalid particle specified!"
+  invalidCount: "&cInvalid count specified!"
+  invalidSpeed: "&cInvalid speed specified!"
+  invalidOffset: "&cInvalid offset specified!"
+  generatorCreated: "&aParticle generator created at your location!"
+  editUsage: "Usage: /particlegen edit <name> [particle] [count] [interval] [speed] [offsetX] [offsetY] [offsetZ]"
+  generatorDoesNotExist: "&cA generator with that name does not exist!"
+  generatorEdited: "&aParticle generator edited!"
+  noChanges: "&cNo changes specified!"
+  deleteUsage: "Usage: /particlegen delete <name>"
+  generatorDeleted: "&aParticle generator deleted!"
+  invalidPage: "&cInvalid page number specified!"
+  paginTitle: "&aParticle generators (page %0/%1)"
+  paginItem: "&e- %0: %1 &b(%2 %3,%4,%5, &3%6 particles, %7 ticks interval, %8 speed, %9,%a,%b offset)"
+  moveUsage: "Usage: /particlegen move <generator> [world] [x] [y] [z]"
+  moveFromConsole: "&cYou must specify the world, X, Y, and Z coordinates to move a particle generator if you are not in-game."
+  worldNotFound: "&cWorld %0 not found!"
+  invalidCoords: "&cInvalid coordinates specified!"
+  generatorMoved: "&aParticle generator moved to %0,%1,%2 in %3"
+  setUsage: "Usage: /particlegen set <generator> <property> [value]"
+  setPropertyUsage: "Usage: /particlegen set %0 %1 <%1>"
+  setOffsetUsage: "Usage: /particlegen set %0 offset <x> <y> <z>"
+  setPropertyFeedback: "&aParticle generator %0 %1 set to %2"
+  setOffsetFeedback: "&aParticle generator %0 offset set to %1,%2,%3"
+  invalidProperty: "&cInvalid property specified!"
+  invalidCommand: "Invalid subcommand specified! Valid subcommands are: create, edit, delete, list, set, move"
+  noConsole: "This command can only be executed by a player!"
