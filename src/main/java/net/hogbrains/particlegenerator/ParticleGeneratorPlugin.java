@@ -521,7 +521,7 @@ public class ParticleGeneratorPlugin extends JavaPlugin {
                 task = Bukkit.getScheduler().runTaskTimer(ParticleGeneratorPlugin.this, new Runnable() {
                     @Override
                     public void run() {
-                        location.getWorld().spawnParticle(particle, location, count, offset.getX(), offset.getY(), offset.getZ(), speed);
+                        location.getWorld().spawnParticle(particle, location, count, offset.getX(), offset.getY(), offset.getZ(), speed, null, true);
                     }
                 }, 0, interval);
             }
